@@ -1,0 +1,408 @@
+{
+  "benchmark": "webshop",
+  "split": "evolution",
+  "seed": 42,
+  "task_count": 100,
+  "tasks": [
+    {
+      "task_id": 1866,
+      "instruction": "im looking for black tempered smart watches. the glass screen is perfectly look so nice"
+    },
+    {
+      "task_id": 10056,
+      "instruction": "i need a blue phone with 4g lte and charges fast too"
+    },
+    {
+      "task_id": 10799,
+      "instruction": "im looking for a ten pack of dairy free, non-gmo plant based sausage breakfast sandwiches"
+    },
+    {
+      "task_id": 6557,
+      "instruction": "i need a high heeled sandals of 6.5 size for daily use . and please get me the gold-2 one"
+    },
+    {
+      "task_id": 3731,
+      "instruction": "i am looking a large pajama set machine wash cold wash relaxed fit  color: with checker pant"
+    },
+    {
+      "task_id": 5949,
+      "instruction": "id like to shop for sparkling watermelon juice thats non-gmo and sugar free"
+    },
+    {
+      "task_id": 1405,
+      "instruction": "im looking for a mid century coffee table for my living room"
+    },
+    {
+      "task_id": 4140,
+      "instruction": "i am looking for a long lasting eau de parfum"
+    },
+    {
+      "task_id": 6558,
+      "instruction": "i am looking for a 32 inch by 48 inch ready to hang hand painted painting"
+    },
+    {
+      "task_id": 2207,
+      "instruction": "i am interested in sardine lemon flavored wild caught sardines which are gluten free"
+    },
+    {
+      "task_id": 5601,
+      "instruction": "i am looking for some colorful life canvas art for the living room"
+    },
+    {
+      "task_id": 4311,
+      "instruction": "i am looking for an easy to carry charger with wireless bluetooth features"
+    },
+    {
+      "task_id": 5645,
+      "instruction": "i am looking for new clear and easy clean tablecloth top protection cover"
+    },
+    {
+      "task_id": 1471,
+      "instruction": "find me a set of cute mesh laundry bags"
+    },
+    {
+      "task_id": 6285,
+      "instruction": "i neet 10 quantity of gold plated display port to vga adapter (male to female) compatible with any computer,laptop and projector"
+    },
+    {
+      "task_id": 5483,
+      "instruction": "im looking for a original non gmo margarita with natural ingredients"
+    },
+    {
+      "task_id": 9704,
+      "instruction": "im looking for a high speed 180 foot coaxial cable with a trishield nickel-plated fitting"
+    },
+    {
+      "task_id": 1650,
+      "instruction": "i want a soft silicone mask for sensitive skin"
+    },
+    {
+      "task_id": 209,
+      "instruction": "i am looking for a 6x9 ft backgrounds for digital photography"
+    },
+    {
+      "task_id": 728,
+      "instruction": "i would like a storage case for my dentures"
+    },
+    {
+      "task_id": 10455,
+      "instruction": "im looking for a heavy duty twin size bunk bed made from solid wood with good storage space for space saving. also, choose white colored one"
+    },
+    {
+      "task_id": 1032,
+      "instruction": "i would like to get a womens large pink heather cotton t-shirt"
+    },
+    {
+      "task_id": 5309,
+      "instruction": "i am looking for east west furniture dlt-ana-tp dublin dining table made of acacia ,a beautiful round dining table makes a cozy addition to any kitchen or classic dining room. the remarkable dining table which facilitates an affectionate family emotion. the frame of this dining room table which will increase the beauty of your living area.  the wood table which gives high-quality style with a touch of class to add a powerful appeal. measurements of the great hardwood wood kitchen table  length 42; width 42; height 29.5 in dmt-wbk-tp color preferable"
+    },
+    {
+      "task_id": 6541,
+      "instruction": "i want an elastic waist beach shorts that is xx-large in size"
+    },
+    {
+      "task_id": 8168,
+      "instruction": "i am looking for a pack of six one ounce vegetable crisps that are plant based and cheddar flavor"
+    },
+    {
+      "task_id": 12016,
+      "instruction": "i am interested in a lemon yellow t-shirt for youth that is machine washable and is in an x-small"
+    },
+    {
+      "task_id": 8868,
+      "instruction": "i need to buy some green sandals with arch support. look for uk size nine medium"
+    },
+    {
+      "task_id": 10504,
+      "instruction": "im looking for wireless bluetooth speaker for home"
+    },
+    {
+      "task_id": 3009,
+      "instruction": "i am looking for a wireless mini 1080p spy camera with motion detection and night vision"
+    },
+    {
+      "task_id": 9898,
+      "instruction": "i want a trupedic x mozaic casual queen size futon mattress"
+    },
+    {
+      "task_id": 11002,
+      "instruction": "i would like a office chair with lumbar support"
+    },
+    {
+      "task_id": 3058,
+      "instruction": "i want notmilk chocolate plant-based milk"
+    },
+    {
+      "task_id": 7671,
+      "instruction": "i need long lasting bedtime spa candles"
+    },
+    {
+      "task_id": 2334,
+      "instruction": "i would like some gray heavy duty spa chairs that look like they belong in a hair salon"
+    },
+    {
+      "task_id": 4447,
+      "instruction": "i need a high power cable that is color3"
+    },
+    {
+      "task_id": 5333,
+      "instruction": "i am looking for a pair of black mens medium underwear that are light weight and machine washable"
+    },
+    {
+      "task_id": 11874,
+      "instruction": "i am looking for a blue coated steel backyard furniture set"
+    },
+    {
+      "task_id": 5148,
+      "instruction": "i want to buy a lightweight photography backdrop that has a print color 03 and is 9x16 ft"
+    },
+    {
+      "task_id": 8613,
+      "instruction": "i would like a non gmo container of artichoke hearts"
+    },
+    {
+      "task_id": 11205,
+      "instruction": "i am looking for strawberry & apple flavor fruit snack pack that are gluten free"
+    },
+    {
+      "task_id": 9317,
+      "instruction": "i am in need of a king sized yellow box spring set"
+    },
+    {
+      "task_id": 10655,
+      "instruction": "i am looking for a  masks for damaged hair"
+    },
+    {
+      "task_id": 11055,
+      "instruction": "i am looking for a  bundle of freeze dried fruits"
+    },
+    {
+      "task_id": 2528,
+      "instruction": "i need to get a dark beige ottoman for my living room"
+    },
+    {
+      "task_id": 7045,
+      "instruction": "im looking for made for cupcakes to birthday party it is easy to make"
+    },
+    {
+      "task_id": 2893,
+      "instruction": "i would like a single 25 foot hdmi 2.1 cable for my blu ray player"
+    },
+    {
+      "task_id": 10826,
+      "instruction": "im looking for a butt lifting yoga pants with high waist tummy control band. also, choose large size black colored one"
+    },
+    {
+      "task_id": 1449,
+      "instruction": "i am looking for gluten free organic bean chili rajma indian seasoning spice that is gmo free"
+    },
+    {
+      "task_id": 2025,
+      "instruction": "i am finding a eco friendly and leak proof plastic refillable bottle container with  protective case - style 1 color"
+    },
+    {
+      "task_id": 10467,
+      "instruction": "i am looking for some dining room barstools"
+    },
+    {
+      "task_id": 2960,
+      "instruction": "im looking for a oil free, fragrance free pressed powder that should be long lasting when applied. also choose 290 natural ochre one"
+    },
+    {
+      "task_id": 3669,
+      "instruction": "i am looking for sandals features a comfortable high heel, open-back slip on style, easy on and off.suitable for party, prom, wedding, red carpet show, street shooting, nightclub, ballroom and other special occasions. slide sandals for women in a6-black, size 8 preferable"
+    },
+    {
+      "task_id": 8388,
+      "instruction": "i want some headphone amplifiers with a power adapter"
+    },
+    {
+      "task_id": 552,
+      "instruction": "im looking for cinnamon almond cereal that has cookie flavor and high protein serving. also, i want a pack of 12 at 1.2 ounce each"
+    },
+    {
+      "task_id": 1937,
+      "instruction": "i am looking for non alcoholic sparkling refreshments in the sauvignon blanc flavor"
+    },
+    {
+      "task_id": 1963,
+      "instruction": "i want to find a two-pack of white usb chargers that can be mounted to a wall"
+    },
+    {
+      "task_id": 2605,
+      "instruction": "im looking for waterproof wildlife hunting trail camera"
+    },
+    {
+      "task_id": 6221,
+      "instruction": "i would like to buy some easy to use hair topper extensions that are 10 inches in length, 130% density and come in wine red color"
+    },
+    {
+      "task_id": 940,
+      "instruction": "i am looking for a high resolution car stereo system with mp-800 and the latest phonelink"
+    },
+    {
+      "task_id": 6503,
+      "instruction": "i am looking for size 12 sneakers that are black and have a rubber sole"
+    },
+    {
+      "task_id": 5594,
+      "instruction": "i am interested in buying biscotti which are fat free, and individually wrapped while their flavor should be cioccolati and packed as 12 in 8-count boxes"
+    },
+    {
+      "task_id": 7198,
+      "instruction": "i am searching for beige color memory foam upholstered fabric platform bed"
+    },
+    {
+      "task_id": 7856,
+      "instruction": "i want to find 0.7-14 millimeter long lash extensions in pink. they must be easy to apply"
+    },
+    {
+      "task_id": 6426,
+      "instruction": "i want to buy the travel size of the creed original impression"
+    },
+    {
+      "task_id": 11410,
+      "instruction": "help me purchase 1 pack of bundle styled freeze-dried strawberries with mango flavor"
+    },
+    {
+      "task_id": 4122,
+      "instruction": "i am searching for black color cupcake toppers for the birthday party"
+    },
+    {
+      "task_id": 6416,
+      "instruction": "i am interested in a loose fit t-shirt that is blue and 4x large"
+    },
+    {
+      "task_id": 5552,
+      "instruction": "im looking for a high resolution wireless headphones with charging case, earphones should be in-ear, built-in mic, easy-pair, voice control sports and gaming earbuds. also choose the black one"
+    },
+    {
+      "task_id": 1651,
+      "instruction": "i would like a floor lamp light fixture for my living room"
+    },
+    {
+      "task_id": 5382,
+      "instruction": "im looking for size ten ladies shoes with a closed toe and leather soles"
+    },
+    {
+      "task_id": 7079,
+      "instruction": "i want to find a womens long-sleeve jumpsuit in a medium size with the 13 color"
+    },
+    {
+      "task_id": 8393,
+      "instruction": "looking for short lace boots for day comfort, fawn color, size 6.5"
+    },
+    {
+      "task_id": 2351,
+      "instruction": "i am looking for a 2 light vanity light with glass shade"
+    },
+    {
+      "task_id": 5837,
+      "instruction": "im looking for a wood framed mounted shark"
+    },
+    {
+      "task_id": 5979,
+      "instruction": "i want to buy some fluoride free mixed berry flavored toothpaste"
+    },
+    {
+      "task_id": 8970,
+      "instruction": "i am looking to purchase a short sleeved, button down shirt for my husband. i need something in size 3x, perhaps in black"
+    },
+    {
+      "task_id": 6417,
+      "instruction": "i want to find a professional tripod that is heavy duty"
+    },
+    {
+      "task_id": 8966,
+      "instruction": "im interested in a pack of 4, 3.17 ounce lightly salted, but unsweetened coconut chips that are non-gmo and gluten-free"
+    },
+    {
+      "task_id": 4330,
+      "instruction": "i am looking for a long sleeve mens pullover hoodie, size medium"
+    },
+    {
+      "task_id": 105,
+      "instruction": "im looking for black colored high quality hair removal cream it easy to use"
+    },
+    {
+      "task_id": 10000,
+      "instruction": "i need some 12 inch white blonde hair extensions"
+    },
+    {
+      "task_id": 4578,
+      "instruction": "i need straight leg and fleece lined chef pants. it should be gray in color"
+    },
+    {
+      "task_id": 4641,
+      "instruction": "i want to find a blue toothbrush that can help me take care of my oral hygiene"
+    },
+    {
+      "task_id": 425,
+      "instruction": "i would like a high speed streaming media player that is easy to use"
+    },
+    {
+      "task_id": 378,
+      "instruction": "i want to find organic, low fat applesauce that is apple strawberry flavored. it should come in 4 ounce cups in a pack of 4"
+    },
+    {
+      "task_id": 4348,
+      "instruction": "i am looking for a camcorder that is easy to carry and have optical zoom"
+    },
+    {
+      "task_id": 7165,
+      "instruction": "what face rollers do you have that are easy to use and for dry and sensitive skin? i would prefer it in blue"
+    },
+    {
+      "task_id": 11022,
+      "instruction": "i am looking for a white coffee tables with nickel finish"
+    },
+    {
+      "task_id": 538,
+      "instruction": "look for a bundle containing freeze dried strawberries and peas"
+    },
+    {
+      "task_id": 294,
+      "instruction": "i want a dongtai 1080p hd hot link remote surveillance camera"
+    },
+    {
+      "task_id": 5853,
+      "instruction": "i am looking for a blue colored, water resistant wireless bluetooth speaker"
+    },
+    {
+      "task_id": 7925,
+      "instruction": "im looking for a jet-4 bluetooth portable speaker"
+    },
+    {
+      "task_id": 777,
+      "instruction": "i want asian sesame keto salad dressing"
+    },
+    {
+      "task_id": 9103,
+      "instruction": "i would like to buy a high gloss walnut entertainment center for a 51 inch tv that has a lot of storage space"
+    },
+    {
+      "task_id": 5556,
+      "instruction": "im looking for a regular fit mens sneakers with rubber sole. also choose 6.5 size black colored one"
+    },
+    {
+      "task_id": 5572,
+      "instruction": "i want a gluten free apple strawberry snack gift"
+    },
+    {
+      "task_id": 8034,
+      "instruction": "i am looking for a sconce light with a black metal base and a wood finish"
+    },
+    {
+      "task_id": 1890,
+      "instruction": "i am looking for an anti perspirant"
+    },
+    {
+      "task_id": 3718,
+      "instruction": "i would like a 66 inch matte black lamp floor lamp for my living room. i would also like a remote for the lamp"
+    },
+    {
+      "task_id": 6472,
+      "instruction": "i am looking for a o color  shampoos for hair losses"
+    }
+  ]
+}

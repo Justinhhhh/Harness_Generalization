@@ -10,6 +10,44 @@ the proposer. Legacy `SWE-bench/trajectories/*` outputs are not imported.
 
 The formal protocol is 100 evolution tasks and 100 held-out evaluation tasks.
 
+## Trajectories and proposer visibility
+
+The run directory is the reproducibility record for an individual execution:
+
+```text
+runs/<run-name>/
+├── evolution.jsonl
+├── heldout.jsonl
+├── baseline/trajectories/<instance_id>/<instance_id>.traj.json
+├── iteration-XX/
+│   ├── candidate-XX.yaml
+│   ├── candidate_manifest.json
+│   ├── proposal.txt
+│   ├── proposer_trace.json
+│   ├── trajectories/<instance_id>/<instance_id>.traj.json
+│   ├── trajectories/preds.json
+│   └── evaluation.json
+└── final/
+    ├── trajectories/<instance_id>/<instance_id>.traj.json
+    ├── trajectories/preds.json
+    └── summary.json
+```
+
+The per-instance `.traj.json` files contain the agent observation/action/tool
+history. `preds.json` is the worker prediction index, and `evaluation.json`
+records the evaluator report used for frontier selection. During iteration N,
+the proposer receives feedback plus selected trajectories from the completed
+evolution output of iteration N-1; it does not receive heldout trajectories.
+The final heldout worker runs only after evolution is complete. Resume keeps
+existing task records and reconstructs the frontier from completed evaluation
+files, so deleting these artifacts changes resume into a fresh run.
+
+The repository intentionally excludes `runs/` and legacy
+`SWE-bench/trajectories/` through `.gitignore`, along with model weights,
+virtual environments, and logs. To reproduce exact intermediate results,
+archive the matching run directory separately; to reproduce the pipeline from
+source, follow the Qwen3-4B or Qwen3-8B resume document below.
+
 ## Resume Qwen3-4B Meta-Harness
 
 The current 4B run is:

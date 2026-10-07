@@ -147,3 +147,32 @@ Score = 当前环境收益 + 通用性收益 − 环境依赖惩罚
 ## 一句话总结
 
 LIFE-HARNESS 证明了 Harness 可以在单一环境中不断优化，而我们进一步研究：一个 Harness 学到的知识，能否被迁移到新的环境，并帮助 Agent 更快地完成适应？
+
+## 复现材料与轨迹
+
+仓库包含复现实验所需的源代码、配置和数据 split。运行后产生的完整轨迹、模型权重、虚拟环境和日志保留在本地运行目录，不提交到 Git；各实验目录的 README/RESUME 文档记录了启动服务、重建环境和恢复运行的命令。
+
+以 SWE-bench Lite Meta-Harness 为例，一次运行目录的结构是：
+
+```text
+runs/<run-name>/
+├── evolution.jsonl                 # evolution 输入任务
+├── heldout.jsonl                   # heldout 输入任务，只在最后评估
+├── baseline/trajectories/<id>/<id>.traj.json
+├── iteration-XX/
+│   ├── candidate-XX.yaml            # proposer 生成的 candidate
+│   ├── candidate_manifest.json
+│   ├── proposal.txt
+│   ├── proposer_trace.json
+│   ├── trajectories/<id>/<id>.traj.json
+│   ├── trajectories/preds.json
+│   └── evaluation.json
+└── final/
+    ├── trajectories/<id>/<id>.traj.json
+    ├── trajectories/preds.json
+    └── summary.json
+```
+
+每个 `.traj.json` 是一个 task 的原始 agent 交互轨迹，`preds.json` 是 worker 的汇总预测，`evaluation.json` 保存 evaluator 的 reward/score 和候选结果。每轮 proposer 只访问上一轮 evolution 的反馈和被工具选中的 evolution trajectory；`heldout.jsonl` 及 `final/heldout` 在 proposer 完成全部 evolution 后才使用。因此恢复同一 run 时，必须保留这些轨迹、`preds.json`、`evaluation.json`、candidate 文件和 proposer trace。
+
+`runs/`、旧版 `SWE-bench/trajectories/`、模型和日志由 `.gitignore` 排除，不会误被提交。要复现同一条运行的中断状态，需要另外保存并恢复对应 run 目录；只有 Git 仓库而没有运行产物时，按文档命令可以复现同样的 pipeline，但会从新的 run 状态开始。

@@ -19,6 +19,32 @@ run, restore the matching run directory separately; without its `preds.json`,
 `evaluation.json`, and candidate state files, the same command starts a new
 run with that name.
 
+## What must be preserved for trajectory-level resume
+
+For each completed or partial iteration, preserve all of the following:
+
+```text
+baseline/trajectories/<id>/<id>.traj.json
+iteration-XX/trajectories/<id>/<id>.traj.json
+iteration-XX/trajectories/preds.json
+iteration-XX/evaluation.json
+iteration-XX/candidate-XX.yaml
+iteration-XX/candidate_manifest.json
+iteration-XX/proposer_trace.json
+final/trajectories/<id>/<id>.traj.json
+final/trajectories/preds.json
+final/summary.json
+```
+
+The task trajectory contains the observation/action/tool history. The proposer
+gets only the prior evolution feedback and selected prior evolution
+trajectories through its read tools. Heldout input and heldout trajectories are
+written for the final evaluator and are not proposer input. `preds.json` is
+used by the worker to skip already completed tasks; `evaluation.json` and the
+candidate files let the orchestrator reconstruct the frontier and candidate.
+Do not copy legacy `SWE-bench/trajectories/` into this run: it is not part of
+the current Meta-Harness protocol.
+
 ## 0. Prepare the SWE-bench Python environment
 
 From a fresh checkout, recreate the interpreter used by the orchestrator:

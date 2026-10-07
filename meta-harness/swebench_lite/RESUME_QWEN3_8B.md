@@ -63,3 +63,31 @@ under `swebench_lite/runs/qwen3-8b-swe-lite-metaharness-20261006`; do not change
 If the checkout has no `SWE-bench/.venv`, recreate it as documented in
 `RESUME_QWEN3_4B.md` before running this command. The repository does not store
 model weights, vLLM environments, or run artifacts.
+
+## Trajectory and resume contract
+
+The run artifacts are the execution record and must be restored together for
+an exact resume:
+
+```text
+baseline/trajectories/<id>/<id>.traj.json
+iteration-XX/trajectories/<id>/<id>.traj.json
+iteration-XX/trajectories/preds.json
+iteration-XX/evaluation.json
+iteration-XX/candidate-XX.yaml
+iteration-XX/candidate_manifest.json
+iteration-XX/proposer_trace.json
+final/trajectories/<id>/<id>.traj.json
+final/trajectories/preds.json
+final/summary.json
+```
+
+Each task trajectory records the agent's observations, actions, tool calls,
+and result. The proposer sees the previous evolution iteration's feedback and
+selected evolution trajectories only. Heldout data is evaluated after the
+evolution loop and is not exposed to the proposer. On resume, the worker uses
+existing `preds.json` and task trajectory files to skip completed tasks and the
+orchestrator uses completed `evaluation.json` files to rebuild the frontier.
+If the run directory is absent, the Git checkout still reproduces the same
+pipeline, but it cannot reproduce the prior partial state or exact prior
+trajectories.

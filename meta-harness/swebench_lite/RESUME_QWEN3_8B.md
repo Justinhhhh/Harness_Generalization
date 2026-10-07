@@ -64,6 +64,20 @@ If the checkout has no `SWE-bench/.venv`, recreate it as documented in
 `RESUME_QWEN3_4B.md` before running this command. The repository does not store
 model weights, vLLM environments, or run artifacts.
 
+The complete trajectory bundle for this run is tracked in Git LFS at
+`repro_artifacts/qwen3-8b-swe-lite-metaharness-20261006.tar.zst`. After
+cloning and installing Git LFS, restore it with:
+
+```bash
+cd /home/mohanz/Harness_Generalization
+git lfs pull --include='repro_artifacts/qwen3-8b-swe-lite-metaharness-20261006.tar.zst'
+tar --zstd -xf repro_artifacts/qwen3-8b-swe-lite-metaharness-20261006.tar.zst \
+  -C meta-harness/swebench_lite/runs
+```
+
+The archive restores the exact `runs/qwen3-8b-swe-lite-metaharness-20261006`
+tree, including the partial evolution trajectories and evaluation state.
+
 ## Trajectory and resume contract
 
 The run artifacts are the execution record and must be restored together for

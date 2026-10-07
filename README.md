@@ -176,3 +176,8 @@ runs/<run-name>/
 每个 `.traj.json` 是一个 task 的原始 agent 交互轨迹，`preds.json` 是 worker 的汇总预测，`evaluation.json` 保存 evaluator 的 reward/score 和候选结果。每轮 proposer 只访问上一轮 evolution 的反馈和被工具选中的 evolution trajectory；`heldout.jsonl` 及 `final/heldout` 在 proposer 完成全部 evolution 后才使用。因此恢复同一 run 时，必须保留这些轨迹、`preds.json`、`evaluation.json`、candidate 文件和 proposer trace。
 
 `runs/`、旧版 `SWE-bench/trajectories/`、模型和日志由 `.gitignore` 排除，不会误被提交。要复现同一条运行的中断状态，需要另外保存并恢复对应 run 目录；只有 Git 仓库而没有运行产物时，按文档命令可以复现同样的 pipeline，但会从新的 run 状态开始。
+
+本仓库另外通过 Git LFS 提供了两个完整的 SWE-bench Lite run bundle：
+`repro_artifacts/qwen3-4b-swe-lite-metaharness-v2-20261005.tar.zst` 和
+`repro_artifacts/qwen3-8b-swe-lite-metaharness-20261006.tar.zst`。安装 Git LFS
+并执行对应 resume 文档中的解包命令后，可以恢复这些 run 的轨迹和中间状态。

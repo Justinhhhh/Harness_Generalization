@@ -48,6 +48,19 @@ virtual environments, and logs. To reproduce exact intermediate results,
 archive the matching run directory separately; to reproduce the pipeline from
 source, follow the Qwen3-4B or Qwen3-8B resume document below.
 
+The two recorded runs are included as Git LFS archives under
+`repro_artifacts/`. Downloading and extracting the matching archive restores
+the ignored `runs/` tree and makes trajectory-level resume possible:
+
+```bash
+git lfs pull
+tar --zstd -xf repro_artifacts/qwen3-4b-swe-lite-metaharness-v2-20261005.tar.zst \
+  -C meta-harness/swebench_lite/runs
+```
+
+Use the analogous Qwen3-8B archive and command in its resume document when
+restoring the 8B run.
+
 ## Resume Qwen3-4B Meta-Harness
 
 The current 4B run is:

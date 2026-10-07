@@ -19,6 +19,20 @@ run, restore the matching run directory separately; without its `preds.json`,
 `evaluation.json`, and candidate state files, the same command starts a new
 run with that name.
 
+The complete trajectory bundle for this run is tracked in Git LFS at
+`repro_artifacts/qwen3-4b-swe-lite-metaharness-v2-20261005.tar.zst`. After
+cloning and installing Git LFS, restore it with:
+
+```bash
+cd /home/mohanz/Harness_Generalization
+git lfs pull --include='repro_artifacts/qwen3-4b-swe-lite-metaharness-v2-20261005.tar.zst'
+tar --zstd -xf repro_artifacts/qwen3-4b-swe-lite-metaharness-v2-20261005.tar.zst \
+  -C meta-harness/swebench_lite/runs
+```
+
+The archive restores the exact `runs/qwen3-4b-swe-lite-metaharness-v2-20261005`
+tree, including evolution and heldout trajectories.
+
 ## What must be preserved for trajectory-level resume
 
 For each completed or partial iteration, preserve all of the following:

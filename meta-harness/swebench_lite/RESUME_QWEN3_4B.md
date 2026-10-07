@@ -13,6 +13,27 @@ partially completed iteration. The worker's `--resume` preserves existing
 trajectory records; the orchestrator reconstructs the best candidate from the
 completed `evaluation.json` files.
 
+The repository does not contain `.venv`, model weights, or run artifacts. A
+fresh clone therefore needs the dependency setup below. To resume an existing
+run, restore the matching run directory separately; without its `preds.json`,
+`evaluation.json`, and candidate state files, the same command starts a new
+run with that name.
+
+## 0. Prepare the SWE-bench Python environment
+
+From a fresh checkout, recreate the interpreter used by the orchestrator:
+
+```bash
+cd /home/mohanz/Harness_Generalization/SWE-bench
+python3 -m venv .venv
+.venv/bin/python -m pip install -U pip
+.venv/bin/pip install -e '.[datasets,inference]'
+.venv/bin/pip install mini-swe-agent
+```
+
+The Ada and Blackwell vLLM environments are separate shared environments used
+only by the service job; they are intentionally not vendored into Git.
+
 ## 1. Request a debug GPU
 
 Submit the existing 4B debug vLLM job:

@@ -1,0 +1,10 @@
+iterations = 10
+evolution_split = "/home/mohanz/Harness_Generalization/data/splits/swebench_lite_evolution.jsonl"
+eval_split = "/home/mohanz/Harness_Generalization/data/splits/swebench_lite_eval.jsonl"
+evolution_tasks = 10
+heldout_tasks = 100
+proposer_model = "qwen3-8b"
+executor_model = "openai/qwen3-8b"
+proposer_max_tokens = 8192
+executor_max_tokens = 4096
+step_limit = 70

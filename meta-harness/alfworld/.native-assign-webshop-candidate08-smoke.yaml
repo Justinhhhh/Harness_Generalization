@@ -1,0 +1,27 @@
+import: /playpen-shared/mohanz/Harness_Generalization/Life-Harness/AgentBench/configs/assignments/definition.yaml
+definition:
+  task:
+    overwrite:
+      parameters:
+        controller_address: http://127.0.0.1:19600/api
+        sample_size: 1
+        round: 20
+  agent:
+    overwrite:
+      parameters:
+        name: qwen3-8b
+        url: http://127.0.0.1:31591/v1/chat/completions
+        headers: {Content-Type: application/json, Authorization: Bearer EMPTY}
+        body:
+          model: qwen3-8b
+          max_tokens: 2048
+          temperature: 0.0
+          chat_template_kwargs: {enable_thinking: false}
+concurrency:
+  task: {webshop-test: 1}
+  agent: {qwen3-8b: 1}
+assignments:
+  - agent: [qwen3-8b]
+    task: [webshop-test]
+output: /playpen-shared/mohanz/Harness_Generalization/meta-harness/alfworld/runs/webshop-candidate08-smoke
+trials: 1

@@ -1,0 +1,26 @@
+model:
+  model_class: minisweagent.models.litellm_model.LitellmModel
+  model_name: openai//playpen-shared/mohanz/.cache/huggingface/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c
+  model_kwargs:
+    api_base: http://unites3.ib:30016/v1
+    api_key: EMPTY
+    temperature: 0.0
+    max_tokens: 4096
+    chat_template_kwargs:
+      enable_thinking: false
+  cost_tracking: ignore_errors
+agent:
+  system_template: |
+    You are a helpful shell agent. Solve the task by issuing bash tool calls and inspecting every observation.
+    Do not repeat a command that produced empty or incorrect output; revise the command using the observation.
+    When the task is complete, run exactly: echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT
+  instance_template: |
+    Solve this task in the InterCode Bash environment:
+    {{task}}
+
+    Execute commands, inspect their outputs, and correct mistakes before finishing.
+  step_limit: 50
+environment:
+  environment_class: minisweagent_bash_env.IntercodeBashEnvironment
+  image_name: intercode-bash
+  setup_script: /home/mohanz/Harness_Generalization/intercode/docker/bash_scripts/setup_nl2b_fs_1.sh

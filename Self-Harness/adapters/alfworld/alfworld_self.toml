@@ -1,0 +1,9 @@
+# ALFWorld Self-Harness protocol.
+iterations = 10
+episode_max_step = 50
+evolution_tasks = 140
+heldout_tasks = 134
+candidate_repeats = 1
+agent_max_tokens = 2048
+proposer_max_tokens = 8192
+thinking = false

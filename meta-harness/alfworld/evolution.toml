@@ -1,0 +1,15 @@
+# ALFWorld Meta-Harness protocol.
+iterations = 10
+smoke_tasks = 3
+evolution_tasks = 140
+heldout_tasks = 134
+episode_max_step = 50
+child_model = "qwen3-4b"
+child_max_tokens = 2048
+child_max_model_len = 32768
+proposer_model = "qwen3-4b"
+proposer_max_tokens = 8192
+proposer_max_tool_turns = 32
+proposer_min_trajectories = 8
+proposer_temperature = 0.2
+proposer_timeout_seconds = 2400

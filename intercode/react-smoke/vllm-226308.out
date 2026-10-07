@@ -1,0 +1,2 @@
+INFO 10-03 10:13:48 [__init__.py:239] Automatically detected platform cuda.
+[2026-10-03T10:13:48.977] error: *** JOB 226308 ON unites4.ib CANCELLED AT 2026-10-03T10:13:48 DUE to SIGNAL Terminated ***

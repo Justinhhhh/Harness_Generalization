@@ -1,0 +1,25 @@
+import: /home/mohanz/Harness_Generalization/Life-Harness/AgentBench/configs/assignments/definition.yaml
+definition:
+  task:
+    overwrite:
+      parameters:
+        controller_address: http://127.0.0.1:19630/api
+  agent:
+    overwrite:
+      parameters:
+        name: qwen3.5-9b
+        url: http://unites8.ib:31615/v1/chat/completions
+        headers: {Content-Type: application/json, Authorization: Bearer EMPTY}
+        body:
+          model: qwen3.5-9b
+          max_tokens: 2048
+          temperature: 0.0
+          chat_template_kwargs: {enable_thinking: false}
+concurrency:
+  task: {webshop-test: 4}
+  agent: {qwen3.5-9b: 4}
+assignments:
+  - agent: [qwen3.5-9b]
+    task: [webshop-test]
+output: /playpen-shared/mohanz/Harness_Generalization/Self-Harness/runs/webshop-alfworld-best-qwen35-9b
+trials: 1

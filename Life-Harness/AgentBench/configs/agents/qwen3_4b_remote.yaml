@@ -1,0 +1,14 @@
+qwen3-4b:
+  import: "./openai-chat.yaml"
+  parameters:
+    name: "qwen3-4b"
+    url: "http://unites4.ib:30017/v1/chat/completions"
+    headers:
+      Content-Type: "application/json"
+      Authorization: "Bearer EMPTY"
+    body:
+      model: "/playpen-shared/mohanz/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5"
+      max_tokens: 4096
+      temperature: 0.0
+      chat_template_kwargs:
+        enable_thinking: false

@@ -1,0 +1,31 @@
+# Local environments and downloaded models
+**/.venv/
+**/.venv-*/
+**/venv/
+**/.cache/
+**/models/
+**/model*.safetensors
+**/*.safetensors
+
+# Run products and transient logs remain on disk but are not source files.
+**/runs/
+**/logs/
+**/*.log
+**/vllm-logs/
+**/batch-results/
+**/react-results/
+**/outputs/
+**/trajectories/
+
+# Large generated archives and local build artifacts.
+**/*.tar.gz
+**/*.zip
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+
+# Environments outside this experiment.
+Life-Harness/AppWorld/
+Life-Harness/TauBench/
+meta-harness/reference_examples/

@@ -1,0 +1,6 @@
+iterations = 1
+evolution_tasks = 10
+eval_tasks = 10
+proposer_model = "qwen3-8b"
+proposer_max_tokens = 8192
+executor_max_tokens = 4096
